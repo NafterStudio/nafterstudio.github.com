@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8">
+<head>
+	<script type="text/javascript" src='./manifest.js'></script>
+	<script type="text/javascript" src='./js/display.js'></script>
+	<script type="text/javascript" src='./js/filter.js'></script>
+	<script type="text/javascript" src='./js/ind.js'></script>
+	<link rel="stylesheet" type="text/css" href='./css/hotblog.css'>
+</head>
+<body id='page'>
+	<div id='mainpage'>
+		<div class='side_box' id='sideBox'>
+			<img id='avatar' class='avatar'/>
+			<p id='welcome' class='welcome'></p>
+			<p><input id='search' /><font id='onsearch' class='search' onclick='search("search")'>🔍</font></p>
+		</div>
+		<div id='articleList'>
+			<table class='article_node' id='articleNode'>
+			</table>
+		</div>
+		<div class='beneath'>
+			<table class='page_choose'>
+				<tr id='pageChoose'></tr>
+			</table>
+		</div>
+	</div>
+	<script>
+		document.cookie = 'aa=keyFilter(getCookie("key"))[0]; SameSite=Lax;';
+		document.cookie = 'ind=keyFilter(getCookie("key"))[1]; SameSite=Lax;';
+		document.getElementById('page').style.backgroundImage = 'url(' + manifest[0].bg + ')';
+		loadPage();
+		pageChange(1, keyFilter(getCookie("key"))[1]);
+		document.onkeypress = function(e) {
+			let curKey = e.which;
+			if(curKey == 13 && document.activeElement.id=='search') {
+				search("search");
+			}
+		}
+	</script>
+</body>
+</html>

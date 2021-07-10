@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8">
+<head>
+	<script type="text/javascript" src='./manifest.js'></script>
+	<script type="text/javascript" src='./js/rdl-core.js'></script>
+	<script type="text/javascript" src='./js/display.js'></script>
+	<script type="text/javascript" src='./js/ind.js'></script>
+	<link rel="stylesheet" type="text/css" href='./css/hotblog.css'>
+</head>
+<body style='background-color: #EFEFEF;' id='page'>
+	<div id='mainpage'>
+		<div class='side_box' id='sideBox'>
+			<img id='avatar' class='avatar'/>
+			<p id='welcome' class='welcome'></p>
+			<div class='beneath'>
+				<table class='page_choose'>
+					<tr id='pageChoose'><td onclick="window.location.href='./index.html'"><</td></tr>
+				</table>
+			</div>
+		</div>
+		<div id='article'>
+		</div>
+	</div>
+	<script>
+		loadPage();
+		playRDL(manifest[1][parseInt(getCookie('cont'))].RDL, 'article');
+	</script>
+</body>
+</html>
