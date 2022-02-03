@@ -19,14 +19,14 @@ let manifest = [
 		{
 			"key" : "Goodbye",
 			"title" : "再见",
-			"RDL" : "高考难死了。",
+			"RDL" : "p\\高考难死了。",
 			"tag" : ['journal']
 		},
 
 		{
 			"key" : "tql",
 			"title" : "%%%",
-			"RDL" : "%ls，林湃tql",
+			"RDL" : "p\\%ls，林湃tql",
 			"tag" : ['journal']
 		},
 
@@ -40,7 +40,7 @@ let manifest = [
 		{
 			"key" : "tcl",
 			"title" : "弱",
-			"RDL" : "。。",
+			"RDL" : "p\\。。",
 			"tag" : ['journal']
 		} ,
 
