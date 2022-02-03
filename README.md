@@ -1,3 +1,3 @@
 # nafterstudio.github.com
 
-HotBlogSample
+HotBlog Sample
