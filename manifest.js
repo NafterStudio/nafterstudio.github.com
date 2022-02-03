@@ -19,35 +19,35 @@ let manifest = [
 		{
 			"key" : "Goodbye",
 			"title" : "再见",
-			"RDL" : "p\\高考难死了。",
+			"RDL" : "p\\高考难死了。\\",
 			"tag" : ['journal']
 		},
 
 		{
 			"key" : "tql",
 			"title" : "%%%",
-			"RDL" : "p\\%ls，林湃tql",
+			"RDL" : "p\\%ls，林湃tql\\",
 			"tag" : ['journal']
 		},
 
 		{
 			"key" : "csl",
 			"title" : "好菜啊",
-			"RDL" : "[x]\\翻车老菜",
+			"RDL" : "[x]\\翻车老菜\\",
 			"tag" : ['journal']
 		},
 
 		{
 			"key" : "tcl",
 			"title" : "弱",
-			"RDL" : "p\\。。",
+			"RDL" : "p\\。。\\",
 			"tag" : ['journal']
 		} ,
 
 		{
 			"key" : "不对劲烦",
 			"title" : "好的坏小孩",
-			"RDL" : "[]\\和市场经济的好地方很单纯",
+			"RDL" : "[]\\和市场经济的好地方很单纯\\",
 			"tag" : ['journal']
 		}
 
