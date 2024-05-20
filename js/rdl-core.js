@@ -20,12 +20,12 @@ function playRDL(rawRDL, elementID) {
 		case '[]':
 			tmpElement = document.createElement('p');
 			tmpElement.innerHTML = '<input type="checkbox" disabled="disabled">' + opRDL[i + 1];
-			i+=2;
+			++i;
 			break;
 		case '[x]':
 			tmpElement = document.createElement('p');
 			tmpElement.innerHTML = '<input type="checkbox" checked="true" disabled="disabled">' + opRDL[i + 1];
-			i+=2;
+			++i;
 			break;
 		case '':
 			tmpElement = document.createElement('br');
